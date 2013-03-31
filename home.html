@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>High Street</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta name="keywords" content="Take The High Street, High Street Design, sustainability, design, art, stencil art, Carrboro, photography, local, agriculture, community">
+	<meta name="author" content="Take The High Street">
+	<link rel="stylesheet" href="style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="normalize.css" type="text/css" media="all">
+	<link rel="stylesheet" href="grid.css" type="text/css" media="all">
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+		</script>
+		
+		<script type="text/javascript" src="isotope.js"></script>
+		
+		<script type="text/javascript">
+		
+		$(document).ready(function(){
+		var $container = $('#content');
+$container.isotope({
+	filter: '*',
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+   }
+});
+
+$('.nav a').click(function(){
+  var selector = $(this).attr('data-filter');
+    $container.isotope({ 
+	filter: selector,
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+	 
+   }
+  });
+  return false;
+});
+
+});
+		</script>
+
+</head>
+
+<body>
+
+		
+
+	<div class="container">
+			<div>
+				<ul class="social">
+					<li><a href="https://twitter.com/highstreetmeg"><img src="twitter.png" width="30" height="30" alt="Twitter"></a>
+					</li>
+					<li><a href="https://www.facebook.com/takethehighstreet"><img src="facebook.png" width="30" height="30" alt="Facebook"></a>
+					</li>
+				</ul>	
+			</div>
+
+			<div class="header">
+				<!--<br>-->
+				<a href="http://takethehighstreet.com/"><h1>HighStreetDesign</h1></a>
+				<!--<h2><em>Take The High Street.</em></h2>-->	
+			</div>
+			
+			<div>
+				<ul class="nav">
+
+					<li id="nav1" class="button"><a href="" data-filter="*"><STRONG>Welcome To High Street</STRONG></a></li>
+
+					<li id="nav2" class="button"><a href="" data-filter=".cat1"><strong>Work</strong></a></li>
+
+					<li id="nav3" class="button"><a href="" data-filter=".cat2"><strong>Thoughts</strong></a></li>
+
+					<li id="nav4" class="button"><a href="" data-filter=".cat3"><strong>Philosophy</strong></a></li>
+
+					</ul>
+			</div>
+		
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			<!--<div class="intro">
+				<p><strong>
+					High Street: a refreshing approach to sustainable design. Compare to the cool side of the pillow.</strong>
+				</p>	
+			</div>-->
+			<br>
+			<hr>
+
+		<div id="content">
+			<div class="box cat2 cat3" style="background-color:yellow;">
+				<h2 class="box-title">Meet The Dude.</h2>
+				<div class="box-text">
+					Not much is known about the dude. But he does some wicked stencil art.
+				</div>
+			</div>
+
+			<div class="box cat2 cat3" style="background-color:purple; opacity: .70;">
+				<h2 class="box-title">The Chick.</h2>
+				<div class="box-text">
+					Slightly more is known about the chick, but come on, she's a chick. Expert photography maverick.
+				</div>
+			</div>
+
+			<div class="box cat1" style="background-color:blue; opacity: .65;">
+				<h2 class="box-title">Graphic Design.</h2>
+				<div class="box-text">
+					Design with an urban focus. Keeping it edgy.
+				</div>
+			</div>
+
+			<div class="box cat2 cat 3" style="background-color:red; opacity: .60;">
+				<h2 class="box-title">Carrboro.</h2>
+				<div class="box-text">
+					Welcome to Carrboro, a place where people are put first. 
+				</div>
+			</div>
+
+			<div class="box cat1" style="background-color:green;">
+				<h2 class="box-title">Photography.</h2>
+				<div class="box-text">
+					What we have is worth at least 1001 words.
+				</div>
+			</div>
+
+			<div class="box cat2 cat 3" style="background-color:black;" text-color="white">
+				<h2 class="box-title">Sustainability.</h2>
+				<div class="box-text">
+					Our community is everything to us. We want to have you around for a very long time.
+				</div>
+			</div>
+
+			<div class="box cat1 cat2 cat3" style="background-color:orange;">
+				<h2 class="box-title">Things We Love.</h2>
+				<div class="box-text">
+					People. Design. Art. Beauty. 
+				</div>
+			</div>
+
+			<div class="box cat1" style="background-color:brown;">
+				<h2 class="box-title">Us.</h2>
+				<div class="box-text">
+					Our work speaks for itself. And we speak through our work. So I guess we speak for ourselves?
+				</div>
+			</div>
+
+			<div class="box cat1" style="background-color:white; border-style:solid; border-color:black">
+				<h2 class="box-title">Journal.</h2>
+				<div class="box-text">
+					Preservation of thought through writing.
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div id="footer">
+			<p>
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+		</div>
+		<hr>
+		<br>
+	</div>
+</body>
+
+</html>
